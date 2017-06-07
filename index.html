@@ -3,16 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Bootstrap</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+</head>
 		
-<body>
+<body data-spy= "scroll" data-target="#my-navbar">
 		<!-- nav -->
-		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<nav class="navbar navbar-inverse navbar-static-top" id="my-navbar">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -25,10 +27,11 @@
 				<div class="collapse navbar-collapse" id="navbar-collapse">
 					<a href="" class="btn btn-info navbar-btn navbar-right">Download Now</a>
 						<ul class="nav navbar-nav">
+							<li><a href="#Feedback">Feedback</a>
 							<li><a href="#Gallery">Gallery</a>
 							<li><a href="#Features">Features</a>
-							<li><a href="#Feedback">Feedback</a>	
-							<li><a href="#Subscribe">Subscribe</a>	
+							<li><a href="#FAQ">FAQ</a>
+							<li><a href="#ContactUs">ContactUs</a>	
 						</ul>		
 				</div>
 			</div>
@@ -40,14 +43,6 @@
 			<div class="container text-center">
 				<h3>My Projects</h3>
 				<P>This is a bumpy ride and I am trying to be patient with the pace of learning. Messing up with code and not getting the required results drive me mad. I have to stick with the rules of "keep Swimming" and "Its ok to have an idiotic face during class".</P>
-
-				<div class="btn-group">
-					<a href="#" class="btn btn-md btn-warning">Listed Projects</a>
-					<a href="#" class="btn btn-md btn-default">Download Projects</a>
-					<a href="#" class="btn btn-md btn-warning">Spread the word</a>
-					
-				</div>
-				
 			</div>
 		</div>
 		<!-- End Main Page Content -->
@@ -66,10 +61,14 @@
 							<p>Will you please join my firm?</p>
 							<footer>Bill Gates</footer>
 						</blockquote>
+					</div>
+					<div class="col-lg-4">
 						<blockquote>
 							<p>Your website is better than mine!</p>
 							<footer>XYZ Peer</footer>
 						</blockquote>
+					</div>
+					<div class="col-lg-4">
 						<blockquote>
 							<p>What if i am running out quotes of now!</p>
 							<footer>Mamoona Chaudhry</footer>
@@ -78,6 +77,7 @@
 				</div>
 			</section> 
 			<!-- feedback ended here -->
+		</div>
 
 			<!-- call to action (subcribe)-->
 			<section>
@@ -113,78 +113,81 @@
 			<!-- Gallery -->
 			<div class="container">
 				<section>
-					<div class="page-header">
+					<div class="page-header" id="Gallery">
 						<h2>Gallery.<SMALL> Checkout the awsome Gallery</SMALL></h2>
 					</div>
 					<!-- End Header -->
+					<!-- carousel -->
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+							    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							    <li data-target="#myCarousel" data-slide-to="1"></li>
+							    <li data-target="#myCarousel" data-slide-to="2"></li>
+							    <li data-target="#myCarousel" data-slide-to="3"></li>
+							    <li data-target="#myCarousel" data-slide-to="4"></li>
+							  </ol>
 
-					<div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
-							<li data-target="#screenshot-carousel" data-slide-to="1"></li>
-							<li data-target="#screenshot-carousel" data-slide-to="2"></li>
-							<li data-target="#screenshot-carousel" data-slide-to="3"></li>
-							<li data-target="#screenshot-carousel" data-slide-to="4"></li>
-							
-						</ol>
-					
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+								    <div class="item active">
+								      <img src="images/technics-q-c-640-480-1.jpg" alt="project1" id="img1">
+									      	<div class="carousel-caption">
+												<h3>Project Heading</h3>
+												<p>Project Description</p>
+											</div>
+								    </div>
 
-						<div class="carousel-inner">
+								    <div class="item">
+								      <img src="images/technics-q-c-640-480-2.jpg" alt="project2" id="img1">
+								      		<div class="carousel-caption">
+												<h3>Project Heading</h3>
+												<p>Project Description</p>
+											</div>
+								    </div>
 
-							<div class="item active">
-								<img src="technics-q-c-640-480-1.jpg" style="width: 100%; height: 500px;" alt="project 1">
-								<div class="carousel-caption">
-									<h3>Project Heading</h3>
-									<p>Project Description</p>
-								</div>
-							</div>
-							<div class="item">
-								<img src="technics-q-c-640-480-2.jpg" style="width: 100%; height: 500px;" alt="project 2">
-								<div class="carousel-caption">
-									<h3>Project Heading</h3>
-									<p>Project Description</p>
-								</div>
-							</div>
-							<div class="item">
-								<img src="technics-q-c-640-480-5.jpg" style="width: 100%; height: 500px;" alt="project 3">
-								<div class="carousel-caption">
-									<h3>Project Heading</h3>
-									<p>Project Description</p>
-								</div>
-							</div>
-							<div class="item">
-								<img src="technics-q-c-640-480-7.jpg" style="width: 100%; height: 500px;" alt="project 4">
-								<div class="carousel-caption">
-									<h3>Project Heading</h3>
-									<p>Project Description</p>
-								</div>
-							</div>
-							<div class="item">
-								<img src="technics-q-c-640-480-9.jpg" style="width: 100%; height: 500px;" alt="project 5">
-								<div class="carousel-caption">
-									<h3>Project Heading</h3>
-									<p>Project Description</p>
-								</div>
-							</div>
+								    <div class="item">
+								      <img src="images/technics-q-c-640-480-5.jpg" alt="project3" id="img1">
+								      		<div class="carousel-caption">
+												<h3>Project Heading</h3>
+												<p>Project Description</p>
+											</div>
+								    </div>
 
-						</div>
-						<!-- end inner carosel -->
-						
-							<a href="#screenshot-carousel" class="left carosel-control" data-slide="prev">
-								<span class="glyphicon glyphicon-chevron-left"></span>
-							</a>
-							<a href="#screenshot-carousel" class="right carosel-control" data-slide="next">
-								<span class="glyphicon glyphicon-chevron-right"></span>
-							</a>
+								    <div class="item">
+								      <img src="images/technics-q-c-640-480-7.jpg" alt="project4" id="img1">
+								      		<div class="carousel-caption">
+												<h3>Project Heading</h3>
+												<p>Project Description</p>
+											</div>
+								    </div>
+
+								    <div class="item">
+								      <img src="images/technics-q-c-640-480-9.jpg" alt="project5" id="img1">
+								      		<div class="carousel-caption">
+												<h3>Project Heading</h3>
+												<p>Project Description</p>
+											</div>
+								    </div>
+							  </div>
+
+							  <!-- Left and right controls -->
+							  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
 					</div>
-					<!-- end carosel -->
 				</section>
 			</div>
 
 			<!-- Features -->
 			<div class="container">
 				<section>
-					<div class="page-header">
+					<div class="page-header" id="Features">
 						<h2>Features.<SMALL> Some of the coolest features of this app.</SMALL></h2>
 					</div>
 					<!-- End header -->
@@ -195,7 +198,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam est aut sed dolores aliquam, labore fugit ducimus cumque consequatur! Nostrum quam nam alias perspiciatis laborum explicabo odio corporis dolorum repudiandae! </p>
 						</div>
 						<div class="col-lg-4">
-							<img src="Unknown" class="image-responsive" alt="smartphone">
+							<img src="images/Unknown" class="image-responsive" alt="smartphone">
 						</div>
 					</div>
 					<!-- End Row  -->
@@ -206,7 +209,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam est aut sed dolores aliquam, labore fugit ducimus cumque consequatur! Nostrum quam nam alias perspiciatis laborum explicabo odio corporis dolorum repudiandae! </p>
 						</div>
 						<div class="col-lg-4">
-							<img src="Unknown-2" class="image-responsive" alt="imac">
+							<img src="images/Unknown-2" class="image-responsive" alt="imac">
 						</div>
 					</div>
 					<!-- End Row  -->
@@ -217,7 +220,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam est aut sed dolores aliquam, labore fugit ducimus cumque consequatur! Nostrum quam nam alias perspiciatis laborum explicabo odio corporis dolorum repudiandae! </p>
 						</div>
 						<div class="col-lg-4">
-							<img src="Unknown-3" class="image-responsive" alt="tablet">
+							<img src="images/Unknown-3" class="image-responsive" alt="tablet">
 						</div>
 					</div>
 					<!-- End Row  -->
@@ -260,13 +263,210 @@
 				</section>	
 			</div>
 			<!-- End container -->
-				
+			
+			<!-- FAQ -->
+			<div class="container">
+				<section>
+					<div class="page-header" id="FAQ">
+						<h2>FAQ.<small> Engaging with Consumers.</small></h2>	
+					</div>
+					<!-- End Page Header -->
 
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="Panel-title">
+								<a href="#collapse-1" data-toggle="collapse" data-parent="#accordion">
+									Question One?
+								</a>	
+								</div>
+								<!-- End Panel Title -->
+								<div id="collapse-1" class="panel-collapse collapse in">
+									<div class="Panel-body">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ullam reiciendis recusandae illo quibusdam non, vitae, fuga voluptatum exercitationem totam quisquam veniam ducimus saepe fugiat magnam ut obcaecati, accusantium nemo.
+									</div>
+								</div>
+								<!-- End Panel Collapse -->
+							</div>	
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="Panel-title">
+								<a href="#collapse-2" data-toggle="collapse" data-parent="#accordion">
+									Question Two?
+								</a>	
+								</div>
+								<!-- End Panel Title -->
+								<div id="collapse-2" class="panel-collapse collapse">
+									<div class="Panel-body">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ullam reiciendis recusandae illo quibusdam non, vitae, fuga voluptatum exercitationem totam quisquam veniam ducimus saepe fugiat magnam ut obcaecati, accusantium nemo.
+									</div>
+								</div>
+								<!-- End Panel Collapse -->
+							</div>	
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="Panel-title">
+								<a href="#collapse-3" data-toggle="collapse" data-parent="#accordion">
+									Question Three?
+								</a>	
+								</div>
+								<!-- End Panel Title -->
+								<div id="collapse-3" class="panel-collapse collapse">
+									<div class="Panel-body">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ullam reiciendis recusandae illo quibusdam non, vitae, fuga voluptatum exercitationem totam quisquam veniam ducimus saepe fugiat magnam ut obcaecati, accusantium nemo.
+									</div>
+								</div>
+								<!-- End Panel Collapse -->
+							</div>	
+						</div>
+
+
+					</div>
+					<!-- End Panel Group -->
+
+
+				</section>
+			</div> 
+			<!-- End Container -->
+
+			<!-- Contact us	 -->
+			<div class="container">
+				<section>
+					<div class="page-header" id="ContactUs">
+						<h2>Contact US.<small> Contact us for more.</small></h2>
+					</div>
+					<!-- End Header -->
+
+					<div class="row">
+						<div class="col-lg-4">
+							<p>Send me the message or contact us from the address below</p>
+
+							<address>
+								<strong>Mamoona Chaudhry Pvt Ltd.</strong><br>
+								3062 49er Ave.<br>
+								Charlotte, NC. 28202<br>
+								P: (702)768-2222
+							</address>
+						</div>
+						<div class="col-lg-8">
+							<form action="" class="form-horizontal">
+							<div class="form-group">
+
+								<label for="user-name" class="col-lg-2 control-label"> 
+									Name	
+								</label>
+
+								<div class="col-lg-10">
+									<input type="text" class="form-control" id="user-name" placeholder="Enter your name">
+								</div>
+							</div>
+							<!-- End Form Group -->
+
+							<div class="form-group">
+
+								<label for="user-email" class="col-lg-2 control-label"> 
+									Email	
+								</label>
+
+								<div class="col-lg-10">
+									<input type="text" class="form-control" id="user-email" placeholder="example@gmail.com">
+								</div>
+							</div>
+							<!-- End Form Group -->
+
+							<div class="form-group">
+
+								<label for="user-url" class="col-lg-2 control-label"> 
+									Your Website	
+								</label>
+
+								<div class="col-lg-10">
+									<input type="text" class="form-control" id="user-url" placeholder="If you have any">
+								</div>
+							</div>
+							<!-- End Form Group -->
+
+							<div class="form-group">
+
+								<label for="user-message" class="col-lg-2 control-label"> 
+									Any Message	
+								</label>
+
+								<div class="col-lg-10">
+									<textarea name="user-message" id="user-message" class="form-control"  column="20" rows="10" placeholder="Enter your Message">	
+									</textarea>
+								</div>
+							</div>
+							<!-- End Form Group -->
+							
+							<div class="form-group">
+								<div class="col-lg-10 col-lg-offset-2">
+									<button type="Submit" class="btn btn-primary">
+									Submit	
+									</button>
+								</div>
+							</div>
+								
+							</form>
+						</div>
+					</div>
+					<!-- End Row -->
+				</section>
+			</div>
+
+<!-- Footer -->
+
+		<footer id="pageFooter">
+		<hr>
+			<div class="container">
+				<div class="container text-center">
+					<h3>Subscribe to learn more</h3>
+					<p>Enter your Name and Email</p>
+
+					<form action="" class="form-inline">
+					
+							<div class="form-group">
+								<label for="Subscription">Subsribe</label>
+								<input type="text" class="form-control" id="Subscription" placeholder="Your Name">
+							</div>
+						
+							<div class="form-group">
+								<label for="Subscription">Email Address</label>
+								<input type="text" class="form-control" id="Subscription" placeholder="example@gmail.com">
+							</div>
+							
+							<button type="Submit" class="btn btn-success">Subscribe</button>
+							<hr>
+					</form>
+					<ul class="list-inline">
+						<a href="https://www.linkedin.com/in/mamoona-chaudhry-a1870782/" target="_blank">
+
+		                  <img id="img2" src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300">
+		                </a>
+
+		                <a href="https://github.com/mchaudhr" target="_blank">
+		                
+		                  <img id="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUpPEaCNf75AAFI7nEwEywyW80jydlSsGl7E_Hc0-bGgePSQVT">
+		                </a>
+
+		                <a href="https://stackoverflow.com/users/7973519/mamoona" target="_blank">
+		                
+		                  <img id="img2" src="http://sourcingrecruitment.info/wp-content/uploads/2015/05/stackoverflow.png">
+		                </a>
+					</ul>
+
+					<p>&copy; Copyright Mamoona Chaudhry @2017</p>
+			</div>
+		</footer>
 
 
 
 			
-		</div>
+	
 
 
 
